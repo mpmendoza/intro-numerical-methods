@@ -98,8 +98,23 @@ Use `notes/summaries/` for weekly concepts, and `notes/cheat_sheets/` for quick-
 - [ ] Use Git commits to track each major problem-solving step
 - [ ] Reuse project structure for future research efforts (e.g., Biomechanics or ODE-based modeling)
 
+
 ---
-his document is my personal record of learning, reflections, and problem-solving for the course.  
+# 📝 APMA4300 Student Notes  
+
+This document is my personal record of learning, reflections, and problem-solving for the course.  
+
+---
+
+## 📑 Table of Contents  
+- [📅 Lecture Notes](#-lecture-notes)  
+- [🔑 Key Concepts to Master](#-key-concepts-to-master)  
+- [🧪 Practice & Experiments](#-practice--experiments)  
+- [📚 Homework Reflections](#-homework-reflections)  
+- [❓ Questions for Office Hours / Review](#-questions-for-office-hours--review)  
+- [✅ End-of-Week Wrap-Up](#-end-of-week-wrap-up)  
+- [🔖 Git Commit Naming Convention](#-git-commit-naming-convention)  
+- [🛠️ Git Command Cheat Sheet](#️-git-command-cheat-sheet)  
 
 ---
 
@@ -149,7 +164,30 @@ his document is my personal record of learning, reflections, and problem-solving
 - Still confusing:  
 - Plan for next week:  
 
-_Last updated: September 11, 2025_
+---
+
+## 🔖 Git Commit Naming Convention  
+
+To keep my repo history clear and organized, I’m using the following prefixes:  
+
+- **`notes:`** → updates to `STUDENT_NOTES.md` or reflections.  
+  - Example: `notes: add Lecture 3 reflections on Newton’s method`  
+
+- **`startup:`** → changes to `APMA4300_startup.md`.  
+  - Example: `startup: update checklist with hw2 folder setup`  
+
+- **`lecture:`** → work in my `my_solutions/` folder.  
+  - Example: `lecture: complete bisection method exercise`  
+
+- **`hw:`** → homework files or progress.  
+  - Example: `hw: start problem 2 for HW1`  
+
+- **`misc:`** → everything else (fixes, cleanup, experiments).  
+  - Example: `misc: ignore .DS_Store globally`  
+
+
+---
+
 # 🛠️ Git Command Cheat Sheet  
 
 ### 1. Stage, commit, and push in one go  
@@ -189,4 +227,4 @@ git merge upstream/master
 git push origin master
 ```
 
----
+_Last updated: September 11, 2025_

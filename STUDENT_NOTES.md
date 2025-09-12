@@ -150,3 +150,43 @@ his document is my personal record of learning, reflections, and problem-solving
 - Plan for next week:  
 
 _Last updated: September 11, 2025_
+# 🛠️ Git Command Cheat Sheet  
+
+### 1. Stage, commit, and push in one go  
+```bash
+git add .
+git commit -m "prefix: short description"
+git push origin master
+```
+
+- Replace **`prefix: short description`** with one of my commit prefixes:  
+  - `notes:` → for updates to STUDENT_NOTES.md  
+  - `startup:` → for APMA4300_startup.md changes  
+  - `lecture:` → for my_solutions/ work  
+  - `hw:` → for homework progress  
+  - `misc:` → for fixes or experiments  
+
+---
+
+### 2. Check repo status  
+```bash
+git status
+```
+
+---
+
+### 3. View recent commits  
+```bash
+git log --oneline -5
+```
+
+---
+
+### 4. Sync with professor’s repo  
+```bash
+git fetch upstream
+git merge upstream/master
+git push origin master
+```
+
+---

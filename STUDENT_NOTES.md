@@ -99,5 +99,54 @@ Use `notes/summaries/` for weekly concepts, and `notes/cheat_sheets/` for quick-
 - [ ] Reuse project structure for future research efforts (e.g., Biomechanics or ODE-based modeling)
 
 ---
+his document is my personal record of learning, reflections, and problem-solving for the course.  
 
-_Last updated: September 5, 2025_
+---
+
+## 📅 Lecture Notes  
+**Lecture X – Title (Date)**  
+- **Main topics covered:**  
+- **Key formulas / concepts:**  
+- **Professor’s examples to revisit:**  
+- **Points of confusion to review later:**  
+
+---
+
+## 🔑 Key Concepts to Master  
+- Concept 1 (ex: Floating-point error)  
+- Concept 2 (ex: Newton’s method convergence)  
+- Concept 3  
+
+---
+
+## 🧪 Practice & Experiments  
+- Code snippets I wrote while exploring:  
+  ```python
+  # Example: testing Newton's method with f(x) = x^2 - 5
+  ```
+- Observations / results:  
+
+---
+
+## 📚 Homework Reflections  
+**Homework X – Title**  
+- What I found straightforward:  
+- What challenged me:  
+- Errors I ran into and how I solved them:  
+- Takeaway for next time:  
+
+---
+
+## ❓ Questions for Office Hours / Review  
+- Question 1  
+- Question 2  
+- Question 3  
+
+---
+
+## ✅ End-of-Week Wrap-Up  
+- Biggest insight this week:  
+- Still confusing:  
+- Plan for next week:  
+
+_Last updated: September 11, 2025_

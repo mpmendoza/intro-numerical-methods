@@ -1,107 +1,4 @@
-# APMA 4300E — Computational Math: Introduction to Numerical Methods  
-**Fall 2025 | Columbia University**  
-**Instructor:** Prof. Marc Spiegelman  
-**Schedule:** Tu/Th 10:10–11:25 AM | Schermerhorn 614  
-
----
-
-## 🧠 Course Overview
-
-This course introduces the design and implementation of numerical algorithms for solving mathematical problems in science and engineering. Emphasis is placed on:
-- Precision, accuracy, and error analysis
-- Algorithmic implementation using Python and Jupyter notebooks
-- Applied problem-solving for rootfinding, interpolation, differentiation, integration, ODEs, and linear algebra
-- A final numerical methods project incorporating Finite Element Method (FEM) modeling
-
-You are expected to use Python (NumPy, SciPy, Matplotlib) and write up results using **LaTeX or Markdown**.  
-
----
-
-## 🗂️ Folder Structure
-
-| Folder | Description |
-|--------|-------------|
-| `problem_sets/` | All eight assignments, organized by topic (see below) |
-| `project/` | Final FEM-based project: proposal, code, figures, results, and write-up |
-| `lectures/` | Cloned content from Prof. Spiegelman’s GitHub repo |
-| `notes/` | Summaries and cheat sheets in Markdown or LaTeX |
-| `environment/` | Python package requirements and FEM software setup notes |
-
----
-
-## 📆 Problem Sets (Coding + Writeup)
-
-| PS | Topic | Folder |
-|----|-------|--------|
-| PS0 | Python, NumPy, Jupyter basics | `ps0_intro/` |
-| PS1 | Error types (model, truncation, floating point) | `ps1_error_analysis/` |
-| PS2 | Rootfinding & Optimization | `ps2_rootfinding/` |
-| PS3 | Interpolation methods | `ps3_interpolation/` |
-| PS4 | Numerical differentiation and quadrature | `ps4_quadrature/` |
-| PS5 | ODE initial value problems | `ps5_ODE_ivp/` |
-| PS6 | Boundary value problems + FEM intro | `ps6_ODE_bvp/` |
-| PS7 | Linear algebra basics | `ps7_lin_alg_intro/` |
-| PS8 | QR, Eigen, and SVD applications | `ps8_qr_svd/` |
-
-Each folder should contain:
-- `solution.ipynb` — Python notebook
-- `writeup.md` or `writeup.tex` — LaTeX/Markdown explanation
-- `README.md` — (Optional) Notes to self, reflections
-
----
-
-## 🧪 Final Project
-
-The project includes algorithmic development, analysis, and comparison with FEM software such as **COMSOL** or **FEBio**. Your deliverables include:
-- **Proposal** — problem description, goals
-- **Code** — numerical solution implementation
-- **Figures** — visual results, convergence plots, etc.
-- **Results** — tables, performance metrics
-- **Report** — final analysis written in LaTeX
-
-All project materials live in the `project/` folder and its subfolders.
-
----
-
-## 🛠️ Environment & Tools
-
-This course relies on:
-
-- **Python 3.10+**
-- Core libraries: `numpy`, `scipy`, `matplotlib`, `pandas`, `sympy`
-- Jupyter Notebooks
-- LaTeX for formal writeups
-- FEM software (COMSOL or FEBio)
-
-Track your setup details and dependencies in:
-- `environment/requirements.txt`  
-- `environment/install_guides/` — for FEM tools, licensing, etc.
-
----
-
-## 📝 Notes & Cheat Sheets
-
-Markdown or LaTeX files summarizing:
-- Key concepts
-- Algorithm pseudocode
-- Derivations
-- LaTeX formatting templates
-
-Use `notes/summaries/` for weekly concepts, and `notes/cheat_sheets/` for quick-access references during assignments or the final.
-
----
-
-## 🧭 Study Goals
-
-- [ ] Stay 1 lecture ahead with notebook walkthroughs
-- [ ] Keep assignment folders clean and modular
-- [ ] Use Git commits to track each major problem-solving step
-- [ ] Reuse project structure for future research efforts (e.g., Biomechanics or ODE-based modeling)
-
-
----
 # 📝 APMA4300 Student Notes  
-
 This document is my personal record of learning, reflections, and problem-solving for the course.  
 
 ---
@@ -113,6 +10,10 @@ This document is my personal record of learning, reflections, and problem-solvin
 - [📚 Homework Reflections](#-homework-reflections)  
 - [❓ Questions for Office Hours / Review](#-questions-for-office-hours--review)  
 - [✅ End-of-Week Wrap-Up](#-end-of-week-wrap-up)  
+- [⚡ Startup Checklist](#-startup-checklist)  
+- [📦 Environment Details](#-environment-details)  
+- [🔄 Sync with Professor’s Repo](#-sync-with-professors-repo)  
+- [🛠️ Troubleshooting](#-troubleshooting)  
 - [🔖 Git Commit Naming Convention](#-git-commit-naming-convention)  
 - [🛠️ Git Command Cheat Sheet](#️-git-command-cheat-sheet)  
 
@@ -166,65 +67,107 @@ This document is my personal record of learning, reflections, and problem-solvin
 
 ---
 
-## 🔖 Git Commit Naming Convention  
+## ⚡ Startup Checklist  
+For the **full daily checklist**, see [`APMA4300_startup.md`](APMA4300_startup.md).  
 
-To keep my repo history clear and organized, I’m using the following prefixes:  
-
-- **`notes:`** → updates to `STUDENT_NOTES.md` or reflections.  
-  - Example: `notes: add Lecture 3 reflections on Newton’s method`  
-
-- **`startup:`** → changes to `APMA4300_startup.md`.  
-  - Example: `startup: update checklist with hw2 folder setup`  
-
-- **`lecture:`** → work in my `my_solutions/` folder.  
-  - Example: `lecture: complete bisection method exercise`  
-
-- **`hw:`** → homework files or progress.  
-  - Example: `hw: start problem 2 for HW1`  
-
-- **`misc:`** → everything else (fixes, cleanup, experiments).  
-  - Example: `misc: ignore .DS_Store globally`  
-
+Quick high-level flow:  
+1. Open terminal → `cd /Users/mpm/documents/columbia/coursework/fall2025/APMA4300_NumericalMethods`  
+2. Activate env → `conda activate apma4300`  
+3. Open repo in VS Code → `code .`  
+4. Confirm kernel (`Python (apma4300)`) and run a quick test (`sys.executable`, `numpy.__version__`)  
+5. Run `git status` before/after work  
 
 ---
 
-# 🛠️ Git Command Cheat Sheet  
+## 📦 Environment Details  
+- Python 3.10+  
+- Core libraries:  
+  - `numpy`  
+  - `scipy`  
+  - `matplotlib`  
+  - `pandas`  
+  - `sympy`  
 
-### 1. Stage, commit, and push in one go  
+Export environment if needed:  
 ```bash
-git add .
-git commit -m "prefix: short description"
-git push origin master
+conda env export > environment.yml
 ```
 
-- Replace **`prefix: short description`** with one of my commit prefixes:  
-  - `notes:` → for updates to STUDENT_NOTES.md  
-  - `startup:` → for APMA4300_startup.md changes  
-  - `lecture:` → for my_solutions/ work  
-  - `hw:` → for homework progress  
-  - `misc:` → for fixes or experiments  
-
----
-
-### 2. Check repo status  
+Recreate environment on another system:  
 ```bash
-git status
+conda env create -f environment.yml
 ```
 
 ---
 
-### 3. View recent commits  
+## 🔄 Sync with Professor’s Repo  
+Make sure `upstream` remote is configured:  
 ```bash
-git log --oneline -5
+git remote -v
 ```
 
----
-
-### 4. Sync with professor’s repo  
+To sync:  
 ```bash
 git fetch upstream
 git merge upstream/master
 git push origin master
 ```
 
-_Last updated: September 11, 2025_
+---
+
+## 🛠️ Troubleshooting  
+- **Kernel not showing in VS Code**  
+  ```bash
+  python3 -m ipykernel install --user --name=apma4300 --display-name "Python (apma4300)"
+  ```
+
+- **Environment not activating**  
+  ```bash
+  conda info --envs
+  ```
+
+- **Git won’t push**  
+  - Check branch: `git branch`  
+  - Check PAT validity  
+  - Check remotes: `git remote -v`  
+
+---
+
+## 🔖 Git Commit Naming Convention  
+- **`notes:`** → updates to `STUDENT_NOTES.md` or reflections  
+- **`startup:`** → changes to startup instructions or environment  
+- **`lecture:`** → work in `my_solutions/`  
+- **`hw:`** → homework progress  
+- **`misc:`** → fixes, cleanup, experiments  
+
+---
+
+# 🛠️ Git Command Cheat Sheet  
+
+### Stage, commit, push  
+```bash
+git add .
+git commit -m "prefix: short description"
+git push origin master
+```
+
+### Check repo status  
+```bash
+git status
+```
+
+### View recent commits  
+```bash
+git log --oneline -5
+```
+
+### Sync with professor’s repo  
+```bash
+git fetch upstream
+git merge upstream/master
+git push origin master
+```
+
+---
+
+_Last updated: September 14, 2025_

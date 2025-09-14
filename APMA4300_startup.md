@@ -3,12 +3,11 @@
 ### 1. Open Your Environment  
 ```bash
 conda activate apma4300
-cd /Users/mpm/Documents/Columbia/Coursework/Fall2025/APMA4300_NumericalMethods/git_repo/intro-numerical-methods
+cd /Users/mpm/documents/columbia/coursework/fall2025/APMA4300_NumericalMethods
 code .
 ```
 
-### 2. Sync with Professor’s Repo  
-Always start fresh with the latest lecture materials:  
+### 2. Sync with Professor’s Repo (optional, if new lecture content is available)  
 ```bash
 git fetch upstream
 git merge upstream/master
@@ -28,9 +27,15 @@ git push origin master
 ### 4. Confirm Kernel in VS Code  
 - Kernel should read:  
   ```
-  apma4300 (Python 3.10.18)
+  Python (apma4300)
   ```  
 - If not, select it from the kernel picker.  
+- Extra verification (in first notebook cell):  
+  ```python
+  import sys
+  print(sys.executable)
+  ```
+  Expected: `/Users/mpm/anaconda3/envs/apma4300/bin/python`
 
 ### 5. Learning Cycle  
 - **Before class**: skim/run professor’s notebook, note 1–2 questions.  

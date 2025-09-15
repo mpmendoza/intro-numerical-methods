@@ -1,5 +1,30 @@
-.ipynb_checkpoints/*
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Virtual environments
+.env
+.venv/
+ENV/
+env.bak/
+venv/
+
+# macOS system files
+.DS_Store
+
+# Data (ignore raw, allow readme notes)
+Data/raw/*
+!Data/raw/README.md
+
+# Course-specific ignores
 *.slides.html
 peer_review.html
 *template.ipynb
-.DS_Store
+

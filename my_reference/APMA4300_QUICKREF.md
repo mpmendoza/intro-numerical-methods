@@ -111,6 +111,19 @@ nothing to commit, working tree clean
   ```bash
   gh auth login
   ```
+### If Git opens an editor
+
+**Nano (default editor):**
+- `Ctrl + O` → Save (press `Enter` to confirm filename)  
+- `Ctrl + X` → Exit editor  
+- If prompted to save changes: type `Y` for Yes, `N` for No  
+
+**Vi/Vim (rare case):**
+- Type `:wq` → Save and quit  
+- Type `:q!` → Quit without saving  
+
+- ** If later you want to switch back to VS Code for a nicer editing experience, you can just run:
+    - git config --global core.editor "code --wait"
 
 ---
 

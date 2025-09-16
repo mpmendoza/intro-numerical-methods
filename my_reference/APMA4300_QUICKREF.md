@@ -24,7 +24,18 @@
     git commit -m "prefix: short description"
     git push origin master
 
+    💡 **Pro Tip:**  
+    For quick edits to already tracked files, you can stage and commit in one step:  
+    ```bash
+    git commit -am "prefix: short description"
+    -a automatically stages modified/deleted files (but not new ones).
+    Use normal git add filename for brand new files before committing.
 
+---
+
+✅ This way you’ll always remember:  
+- Use `git commit -am` for quick edits.  
+- Use `git add` + `git commit` when adding something new.  
 
 ---
 

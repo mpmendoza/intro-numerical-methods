@@ -27,4 +27,4 @@ Data/raw/*
 *.slides.html
 peer_review.html
 *template.ipynb
-
+*.bak

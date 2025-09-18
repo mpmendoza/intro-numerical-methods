@@ -13,29 +13,20 @@
    ```  
    ✅ Ensures you’re on `master`, pulls `upstream`, pushes to `origin`  
 
-3. Work on code, notes, or assignments  
+3. Work directly in the root notebooks (00–, 01–, …, HW1, etc.)
 
 4. Save progress  
-    ### Best practice: check what changed first
-    git status
+   ### Best practice: check what changed first
+   ```bash
+   git status
+   ```
 
-    ### Stage, commit, and push
-    git add filename.ipynb     # add specific file(s)
-    git commit -m "prefix: short description"
-    git push origin master
-
-    💡 **Pro Tip:**  
-    For quick edits to already tracked files, you can stage and commit in one step:  
-    ```bash
-    git commit -am "prefix: short description"
-    -a automatically stages modified/deleted files (but not new ones).
-    Use normal git add filename for brand new files before committing.
-
----
-
-✅ This way you’ll always remember:  
-- Use `git commit -am` for quick edits.  
-- Use `git add` + `git commit` when adding something new.  
+   ### Stage, commit, and push
+   ```bash
+   git add filename.ipynb     # add specific file(s)
+   git commit -m "prefix: short description"
+   git push origin master
+   ```
 
 ---
 
@@ -53,7 +44,7 @@
 - `notes: reflections for Lecture 3`  
 - `lecture: solved Newton’s method example`  
 - `assign: completed Assignment 2 Q1-Q3`  
-- `code: add R script for preprocessing cds object`  
+- `code: add helper function for root finding`  
 - `data: updated processed dataset with filtering`  
 - `misc: clean repo structure`  
 
@@ -122,19 +113,6 @@ nothing to commit, working tree clean
   ```bash
   gh auth login
   ```
-### If Git opens an editor
-
-**Nano (default editor):**
-- `Ctrl + O` → Save (press `Enter` to confirm filename)  
-- `Ctrl + X` → Exit editor  
-- If prompted to save changes: type `Y` for Yes, `N` for No  
-
-**Vi/Vim (rare case):**
-- Type `:wq` → Save and quit  
-- Type `:q!` → Quit without saving  
-
-- ** If later you want to switch back to VS Code for a nicer editing experience, you can just run:
-    - git config --global core.editor "code --wait"
 
 ---
 
@@ -158,6 +136,6 @@ nothing to commit, working tree clean
 
 ---
 
-🚀 **Workflow Summary:** `start4300 → syncapma → work → commit/push`
+🚀 **Workflow Summary:** `start4300 → syncapma → work in root notebooks → commit/push`
 
-__last updated: Tue Sep 16, 2025
+__last updated: Thu Sep 18, 2025__

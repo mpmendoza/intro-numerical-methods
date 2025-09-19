@@ -13,7 +13,7 @@
    ```  
    ✅ Ensures you’re on `master`, pulls `upstream`, pushes to `origin`  
 
-3. Work directly in the root notebooks (00–, 01–, …, HW1, etc.)
+3. Work on code, notes, or assignments  
 
 4. Save progress  
    ### Best practice: check what changed first
@@ -26,6 +26,12 @@
    git add filename.ipynb     # add specific file(s)
    git commit -m "prefix: short description"
    git push origin master
+   ```
+
+   📌 Homework notebooks should be copied into a root-level folder `hw1/`, `hw2/`, etc.  
+   Example for HW1:
+   ```
+   intro-numerical-methods/hw1/HW1_error.ipynb
    ```
 
 ---
@@ -44,7 +50,7 @@
 - `notes: reflections for Lecture 3`  
 - `lecture: solved Newton’s method example`  
 - `assign: completed Assignment 2 Q1-Q3`  
-- `code: add helper function for root finding`  
+- `code: add R script for preprocessing cds object`  
 - `data: updated processed dataset with filtering`  
 - `misc: clean repo structure`  
 
@@ -103,7 +109,6 @@ nothing to commit, working tree clean
   ```bash
   conda info --envs
   ```
-  Should list your environments (`apma4300`, `base`, etc.).
 
 - **Check GitHub auth if push/pull fails:**
   ```bash
@@ -136,6 +141,6 @@ nothing to commit, working tree clean
 
 ---
 
-🚀 **Workflow Summary:** `start4300 → syncapma → work in root notebooks → commit/push`
+🚀 **Workflow Summary:** `start4300 → syncapma → work → commit/push`
 
 __last updated: Thu Sep 18, 2025__

@@ -1,4 +1,60 @@
-.ipynb_checkpoints/*
+# ============================
+# Global ignores
+# ============================
+
+# Python cache files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+**/.DS_Store
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# Virtual environments
+.env
+.venv/
+ENV/
+env.bak/
+venv/
+
+# ============================
+# Data rules
+# ============================
+Data/raw/*
+!Data/raw/README.md
+
+# Course-specific ignores
 *.slides.html
 peer_review.html
 *template.ipynb
+*.bak
+
+# ============================
+# Lecture Notebook Ignores
+# ============================
+
+# Top-level numbered professor notebooks
+[0-9]*.ipynb
+
+# Extra lecture examples
+extras/*.ipynb
+
+# Misc lecture files to ignore
+peer_review.ipynb
+_SAVE_MY_WORK.ipynb
+
+# ============================
+# KEEP HOMEWORK + REFERENCE
+# ============================
+
+# Keep ALL .ipynb inside hw folders
+!hw*/**/*.ipynb
+
+# Keep ALL .ipynb inside my_reference
+!my_reference/**/*.ipynb
